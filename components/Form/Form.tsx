@@ -43,6 +43,8 @@ export function Form() {
   };
 
   const handleRegistration = async (data: IForm) => {
+    console.log(process.env.PORT);
+
     const res = await axios.post(
       `http://localhost:${process.env.PORT}/api/auth/registration`,
       data
