@@ -1,0 +1,30 @@
+.sidebar {
+  background-color: var(--red);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.cart {
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.signOut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.out {
+  margin-left: 10px;
+  cursor: pointer;
+}

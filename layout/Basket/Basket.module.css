@@ -1,0 +1,76 @@
+.basket {
+  color: var(--black);
+}
+
+.remove {
+  margin-left: auto;
+  display: block;
+  border: none;
+  background-color: var(--ligth-blue);
+  padding: 5px 15px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.body {
+  padding: 20px 70px;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 40px;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+}
+.btn {
+  border-radius: 50px;
+  background-color: var(--medium-blue);
+  color: var(--white);
+  cursor: pointer;
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.count {
+  margin: 0 20px;
+  font-size: 30px;
+}
+
+.price {
+  font-size: 50px;
+}
+
+.close {
+  position: fixed;
+  z-index: 1;
+  top: 15px;
+  left: 20px;
+}
+
+.footer {
+  border-top: 1px solid var(--grey);
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.total {
+  font-size: 30px;
+}
+
+.save {
+  border: none;
+  background-color: var(--grey);
+  padding: 5px 20px;
+  font-size: 20px;
+  color: var(--white);
+  cursor: pointer;
+}

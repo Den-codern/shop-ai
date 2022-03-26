@@ -1,0 +1,29 @@
+.layout {
+    display: grid;
+    
+    grid-template-columns: 270px minmax(320px, 1fr) ;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:"header header  " 
+                        "sidebar main  " 
+                        "footer footer ";
+
+    min-height: 100vh;
+
+}
+
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.header {
+    grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.main {
+    grid-area: main;
+}

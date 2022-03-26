@@ -1,0 +1,43 @@
+.header {
+  background-color: var(--medium-blue);
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns:200px 1fr auto;
+
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 80px;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+}
+
+.menu a {
+  margin-right: 40px;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.menu a:hover {
+  color: var(--dark-blue);
+}
+
+.user {
+  cursor: pointer;
+}
+
+.logo {
+  cursor:pointer;
+}
+
+.active {
+  color: var(--dark-blue);
+}

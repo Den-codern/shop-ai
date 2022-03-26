@@ -1,0 +1,44 @@
+.form {
+  width: 100%;
+text-align: center;
+}
+
+.icon {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.label {
+  color: var(--grey);
+  display: block;
+  margin-bottom: 40px;
+}
+
+.input {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--medium-blue);
+  outline: none;
+}
+
+.btn {
+  padding: 10px 25px;
+  background-color: var(--dark-blue);
+  border: 1px solid var(--bold-blue);
+  transition: 0.3s all;
+  color: var(--white);
+}
+
+.btn:hover {
+  background-color: var(--medium-blue);
+}
+
+.error {
+  border: 1px solid var(--red);
+}
+
+.errorMessage {
+  color: var(--red);
+}
