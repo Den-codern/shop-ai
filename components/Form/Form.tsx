@@ -8,7 +8,7 @@ import cookies from "js-cookie";
 import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
 import { fetchProducts } from "../../redux/actions/productAction";
-
+import 'dotenv/config';
 export function Form() {
   const dispatch = useDispatch();
   const {
