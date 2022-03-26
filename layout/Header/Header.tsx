@@ -3,7 +3,6 @@ import { HeaderProps } from "./Header.props";
 import { FaUserCircle } from "react-icons/fa";
 import cn from "clsx";
 import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../../redux/reducers";
 import { ModalActionTypes } from "../../redux/types/modal";
 import Logo from "./Logo.png";
 import Image from "next/image";
