@@ -5,11 +5,10 @@ import cookies from "js-cookie";
 export async function fetchProducts(
   dispatch: (arg0: { type: CartActionType; payload?: CartItem[] }) => void
 ) {
-
   const token = `${cookies.get("token")}`;
   dispatch(fetchProductsBegin());
   const { data } = await axios.get(
-    `${process.env.NEXT_PUBLIC_DOMAIN}/api/cart/getProducts`,
+    `http://localhost:${process.env.PORT}/api/cart/getProducts`,
     {
       headers: { Authorization: token },
     }

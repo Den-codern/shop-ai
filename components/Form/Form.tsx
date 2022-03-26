@@ -28,7 +28,7 @@ export function Form() {
 
   const handleLogin = async (data: IForm) => {
     const res = await axios.post(
-      `${process.env.NEXT_PUBLIC_DOMAIN}api/auth/login `,
+      `http://localhost:${process.env.PORT}/api/auth/login `,
       data
     );
     reset();
@@ -44,7 +44,7 @@ export function Form() {
 
   const handleRegistration = async (data: IForm) => {
     const res = await axios.post(
-      `${process.env.NEXT_PUBLIC_DOMAIN}api/auth/registration`,
+      `http://localhost:${process.env.PORT}/api/auth/registration`,
       data
     );
     reset();

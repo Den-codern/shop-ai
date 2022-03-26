@@ -70,7 +70,7 @@ function Basket() {
     };
 
     const { data } = await axios.post(
-      `${process.env.NEXT_PUBLIC_DOMAIN}/api/cart/postProducts`,
+      `http://localhost:${process.env.PORT}/api/cart/postProducts`,
       postData
     );
     notifySuccess(data.message);
