@@ -29,7 +29,7 @@ export function Form() {
     console.log(process.env.NEXT_PUBLIC_PORT);
 
     const res = await axios.post(
-      `http://localhost:${process.env.NEXT_PUBLIC_PORT}/api/auth/login `,
+      `${process.env.NEXT_PUBLIC_DOMAIN}/api/auth/login `,
       data
     );
     reset();
