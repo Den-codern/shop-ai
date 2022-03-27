@@ -1,6 +1,6 @@
 import axios from "axios";
 import { Pagination } from "../components";
-import { ProductsModel, ProductsProps } from "../interfaces/product.interface";
+import { ProductsProps } from "../interfaces/product.interface";
 import cookie from "js-cookie";
 import { useDispatch } from "react-redux";
 import { ModalActionTypes } from "../redux/types/modal";

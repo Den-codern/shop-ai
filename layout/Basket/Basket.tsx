@@ -53,9 +53,11 @@ function Basket() {
   useEffect(() => {
     dispatch(fetchProducts);
   }, []);
+
   function notifySuccess(message: string) {
     toast.success(message);
   }
+
   function handleClick() {
     dispatch({
       type: ModalActionTypes.CLOSE_MODAL,
@@ -70,7 +72,7 @@ function Basket() {
     };
 
     const { data } = await axios.post(
-      `http://localhost:${process.env.PORT}/api/cart/postProducts`,
+      `${process.env.NEXT_PUBLIC_DOMAIN}/api/cart/postProducts`,
       postData
     );
     notifySuccess(data.message);

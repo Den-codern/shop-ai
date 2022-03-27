@@ -8,7 +8,7 @@ export async function fetchProducts(
   const token = `${cookies.get("token")}`;
   dispatch(fetchProductsBegin());
   const { data } = await axios.get(
-    `http://localhost:${process.env.PORT}/api/cart/getProducts`,
+    `${process.env.NEXT_PUBLIC_DOMAIN}/api/cart/getProducts`,
     {
       headers: { Authorization: token },
     }
