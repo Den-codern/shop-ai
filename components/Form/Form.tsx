@@ -8,7 +8,6 @@ import cookies from "js-cookie";
 import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
 import { fetchProducts } from "../../redux/actions/productAction";
-require("dotenv").config();
 export function Form() {
   const dispatch = useDispatch();
   const {
@@ -27,6 +26,8 @@ export function Form() {
   }
 
   const handleLogin = async (data: IForm) => {
+    console.log(process.env.PORT);
+
     const res = await axios.post(
       `http://localhost:${process.env.PORT}/api/auth/login `,
       data
