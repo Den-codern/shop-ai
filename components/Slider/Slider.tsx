@@ -1,8 +1,9 @@
 import SlickSlider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { SliderProps } from "./Slider.props";
 
-export function Slider({ children }) {
+export function Slider({ children }: SliderProps) {
   const settings = {
     arrows: false,
     infinite: true,
