@@ -1,0 +1,62 @@
+.stacks {
+  color: var(--grey);
+}
+.title {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 40px;
+}
+.framework {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+}
+
+.description {
+  margin-left: 20px;
+  margin-left: 20px;
+  width: 500px;
+}
+
+.next {
+  border: 2px solid #000000;
+}
+
+.next .description {
+  color: #000000;
+}
+.mongodb {
+  border: 2px solid #4e9d52;
+}
+.mongodb .description {
+  color: #4e9d52;
+}
+
+.react {
+  border: 2px solid #63d5f1;
+}
+
+.react .description {
+  color: #63d5f1;
+}
+
+.node {
+  border: 2px solid #77b04e;
+}
+.node .description {
+  color: #77b04e;
+}
+.redux {
+  border: 2px solid #744eb8;
+}
+.redux .description {
+  color: #744eb8;
+}
+.typescript {
+  border: 2px solid #3177bc;
+}
+.typescript .description {
+  color: #3177bc;
+}

@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import Layout from "../layout/Layout";
@@ -16,7 +17,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Provider store={store}>
         <Layout>
           <Component {...pageProps} />
-         
         </Layout>
       </Provider>
     </>
