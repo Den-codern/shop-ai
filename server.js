@@ -10,7 +10,9 @@ const handle = app.getRequestHandler();
 const authRouter = require("./routes/auth.routes");
 const productRouter = require("./routes/product.routes");
 const cartRouter = require("./routes/cart.routes");
+const cloudinary = require("cloudinary");
 dbConnect();
+
 app.prepare().then(() => {
   const app = express();
   app.use(express.json());

@@ -12,7 +12,7 @@ function Header({ className, ...props }: HeaderProps) {
   const dispatch = useDispatch();
   const router = useRouter();
   const handleClick = () => {
-      dispatch({ type: ModalActionTypes.OPEN_MODAL,payload:'openFormModal' });
+    dispatch({ type: ModalActionTypes.OPEN_MODAL, payload: "openFormModal" });
   };
   return (
     <>
@@ -30,7 +30,7 @@ function Header({ className, ...props }: HeaderProps) {
                   [styles.active]: router.pathname == "/",
                 })}
               >
-                Home
+                Главная страница
               </a>
             </Link>
             <Link href={"/products"}>
@@ -39,7 +39,7 @@ function Header({ className, ...props }: HeaderProps) {
                   [styles.active]: router.pathname == "/products",
                 })}
               >
-                Products
+                Продукты
               </a>
             </Link>
 
@@ -49,7 +49,7 @@ function Header({ className, ...props }: HeaderProps) {
                   [styles.active]: router.pathname == "/about",
                 })}
               >
-                About
+                О проекте
               </a>
             </Link>
           </nav>

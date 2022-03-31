@@ -1,0 +1,48 @@
+.home {
+  color: var(--grey);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+}
+.form {
+  width: 500px;
+  text-align: center;
+}
+
+.input {
+  margin-bottom: 20px;
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  outline: none;
+}
+
+.image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.textarea {
+  resize: none;
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+}
+.btn {
+  color: var(--white);
+  margin-top: 5px;
+  border: none;
+  background-color: var(--medium-blue);
+  padding: 10px 10px;
+  font-size: 20px;
+}
+.file {
+  padding: 20px;
+}
