@@ -31,7 +31,6 @@ export const getServerSideProps = async () => {
     const { data } = await axios.get(
       `http://localhost:${process.env.PORT}/api/products`
     );
-
     return {
       props: {
         products: data,

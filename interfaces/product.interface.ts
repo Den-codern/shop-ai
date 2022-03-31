@@ -1,5 +1,7 @@
 export interface ProductsModel {
     _id: string;
+    surname:string;
+    firstName:string;
     name: string;
     price: string;
     image: string;

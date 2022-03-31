@@ -1,5 +1,7 @@
 export interface CardProps {
-  _id:string;
+  _id: string;
+  surname: string;
+  firstName: string;
   name: string;
   price: string;
   image: string;

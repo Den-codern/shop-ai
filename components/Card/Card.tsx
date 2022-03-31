@@ -7,7 +7,16 @@ import { CartActionType } from "../../redux/types/cart";
 import { motion } from "framer-motion";
 
 const Card = motion(
-  ({ _id, name, description, image, price, brand }: CardProps) => {
+  ({
+    _id,
+    name,
+    description,
+    image,
+    price,
+    brand,
+    surname,
+    firstName,
+  }: CardProps) => {
     const dispatch = useDispatch();
 
     function handleClick() {
@@ -49,7 +58,9 @@ const Card = motion(
           <div className={styles.user}>
             <HiOutlineUserCircle size={30} />
             <div className={styles.user__info}>
-              <h5>July Dec</h5>
+              <h5>
+                {firstName ? firstName : "July"} {surname ? surname : "Dec"}
+              </h5>
               <small>2h ago</small>
             </div>
           </div>
