@@ -6,6 +6,8 @@ import { useDispatch } from "react-redux";
 import { CartActionType } from "../../redux/types/cart";
 import { motion } from "framer-motion";
 
+import { formatDistance } from "date-fns";
+
 const Card = motion(
   ({
     _id,
@@ -16,6 +18,7 @@ const Card = motion(
     brand,
     surname,
     firstName,
+    createdAt,
   }: CardProps) => {
     const dispatch = useDispatch();
 
@@ -61,7 +64,11 @@ const Card = motion(
               <h5>
                 {firstName ? firstName : "July"} {surname ? surname : "Dec"}
               </h5>
-              <small>2h ago</small>
+              <small>
+                {createdAt
+                  ? formatDistance(new Date(createdAt), new Date())
+                  : "none"}
+              </small>
             </div>
           </div>
           <a onClick={handleClick} className={styles.btn}>

@@ -7,4 +7,5 @@ export interface CardProps {
   image: string;
   brand: string;
   description: string;
+  createdAt: string;
 }
