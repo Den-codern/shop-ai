@@ -20,6 +20,7 @@ router.post("/", async (req, res) => {
   });
 
   product.save();
+  res.json({ message: "Продукт успешно создан" });
 });
 
 module.exports = router;

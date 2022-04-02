@@ -4,6 +4,7 @@ import { FormEvent, useRef, useState } from "react";
 import Image from "next/image";
 import preloadImage from "../square-image.png";
 import axios from "axios";
+import { toast } from "react-toastify";
 interface IForm {
   firstName: string;
   surname: string;
@@ -21,6 +22,10 @@ function Home() {
     register,
     formState: { errors },
   } = useForm<IForm>();
+
+  function notifySuccess(message: string) {
+    toast.success(message);
+  }
 
   const [media, setMedia] = useState("");
   const inputRef = useRef<HTMLInputElement | null>(null);
@@ -48,6 +53,7 @@ function Home() {
         image: image.data.url,
       }
     );
+    notifySuccess(product.data.message)
   }
 
   function handleChange(e: FormEvent<HTMLInputElement>) {
